@@ -1,0 +1,26 @@
+{
+  "name": "wh-tech-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --detectOpenHandles"
+  },
+  "author": "James Haseltine",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^24.7.1",
+    "jest-html-reporter": "^2.5.0",
+    "puppeteer": "^1.15.0",
+    "save": "^2.3.3"
+  },
+  "jest":{"reporters": [
+    "default",
+    ["./node_modules/jest-html-reporter", {
+        "pageTitle": "Test Report"
+    }]
+]}
+}
